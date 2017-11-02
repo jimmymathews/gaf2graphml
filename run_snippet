@@ -1,0 +1,1 @@
+java -cp target/gaf2graphml-1.0-SNAPSHOT-jar-with-dependencies.jar com.jm.gaf2graphml.GAF2GraphML $1

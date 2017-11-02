@@ -1,0 +1,33 @@
+!Note that the annotation set in this file is filtered in order to reduce redundancy; the full, unfiltered set can be found in
+!ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/UNIPROT/goa_uniprot_all.gz
+!
+!Generated: 2017-09-26 09:51
+!GO-version: http://purl.obolibrary.org/obo/go/releases/2017-09-23/extensions/go-plus.owl
+!
+UniProtKB	O14647	CHD2		GO:0070062	PMID:23376485	IDA		C	Chromodomain-helicase-DNA-binding protein 2	CHD2_HUMAN|CHD2	protein	taxon:9606	20140521	UniProt	part_of(CL:0000653),part_of(UBERON:0001088)	
+UniProtKB	O14649	KCNK3		GO:0005216	PMID:12198146	IMP		F	Potassium channel subfamily K member 3	KCNK3_HUMAN|KCNK3|TASK|TASK1	protein	taxon:9606	20130912	UniProt		
+UniProtKB	O00206	TLR4		GO:0002755	GO_REF:0000024	ISS	UniProtKB:Q9QUK6	P	Toll-like receptor 4	TLR4_HUMAN|TLR4	protein	taxon:9606	20170517	ARUK-UCL	occurs_in(CL:0000235),positively_regulates(GO:0002269),part_of(GO:0071404)	
+UniProtKB	A0A024R161	DNAJC25-GNG10		GO:0004871	GO_REF:0000038	IEA	UniProtKB-KW:KW-0807	F	Guanine nucleotide-binding protein subunit gamma	A0A024R161_HUMAN|DNAJC25-GNG10|hCG_1994888	protein	taxon:9606	20170923	UniProt		
+UniProtKB	A0A024R161	DNAJC25-GNG10		GO:0005834	GO_REF:0000002	IEA	InterPro:IPR001770|InterPro:IPR015898	C	Guanine nucleotide-binding protein subunit gamma	A0A024R161_HUMAN|DNAJC25-GNG10|hCG_1994888	protein	taxon:9606	20170923	InterPro		
+UniProtKB	A0A024R161	DNAJC25-GNG10		GO:0007186	GO_REF:0000002	IEA	InterPro:IPR001770|InterPro:IPR015898	P	Guanine nucleotide-binding protein subunit gamma	A0A024R161_HUMAN|DNAJC25-GNG10|hCG_1994888	protein	taxon:9606	20170923	InterPro		
+UniProtKB	A0A024R216	HDGFRP3		GO:0005654	GO_REF:0000052	IDA		C	Hepatoma-derived growth factor, related protein 3, isoform CRA_a	A0A024R216_HUMAN|HDGFRP3|hCG_1811535	protein	taxon:9606	20110516	HPA	
+UniProtKB	A0A024R216	HDGFRP3		GO:0005829	GO_REF:0000107	IEA	UniProtKB:Q9JMG7|ensembl:ENSMUSP00000102926	C	Hepatoma-derived growth factor, related protein 3, isoform CRA_a	A0A024R216_HUMAN|HDGFRP3|hCG_1811535	protein	taxon:9606	20170923	Ensembl		
+UniProtKB	A0A075B6H9	IGLV4-69		GO:0005615	GO_REF:0000033	IBA	PANTHER:PTN000587099	C	Immunoglobulin lambda variable 4-69	LV469_HUMAN|IGLV4-69	protein	taxon:9606	20150528	GO_Central		
+UniProtKB	A0A075B6H9	IGLV4-69		GO:0005886	GO_REF:0000039	IEA	UniProtKB-SubCell:SL-0039	C	Immunoglobulin lambda variable 4-69	LV469_HUMAN|IGLV4-69	protein	taxon:9606	20170923	UniProt		
+UniProtKB	P01730	CD4		GO:0032355	GO_REF:0000107	IEA	UniProtKB:P05540|ensembl:ENSRNOP00000021915	P	T-cell surface glycoprotein CD4	CD4_HUMAN|CD4	protein	taxon:9606	20170923	Ensembl		
+UniProtKB	P01730	CD4		GO:0032507	PMID:15128768	IDA		P	T-cell surface glycoprotein CD4	CD4_HUMAN|CD4	protein	taxon:9606	20090113	MGI		
+UniProtKB	P01730	CD4		GO:0033280	GO_REF:0000107	IEA	UniProtKB:P05540|ensembl:ENSRNOP00000021915	P	T-cell surface glycoprotein CD4	CD4_HUMAN|CD4	protein	taxon:9606	20170923	Ensembl		
+UniProtKB	P01730	CD4		GO:0033674	PMID:24942581	IDA		P	T-cell surface glycoprotein CD4	CD4_HUMAN|CD4	protein	taxon:9606	20161130	CAFA		
+UniProtKB	P02818	BGLAP		GO:0071363	GO_REF:0000107	IEA	UniProtKB:P04640|ensembl:ENSRNOP00000026530	P	Osteocalcin	OSTCN_HUMAN|BGLAP	protein	taxon:9606	20170923	Ensembl		
+UniProtKB	P03372	ESR1		GO:0000122	PMID:20388878	IMP		P	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20160310	BHF-UCL	regulates_expression_of(ENSEMBL:ENSG00000207870),regulates_expression_of(ENSEMBL:ENSG00000207725),part_of(GO:0071391)	
+UniProtKB	P03372	ESR1		GO:0000790	PMID:15831516	IDA		C	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20150417	BHF-UCL		
+UniProtKB	P03372	ESR1		GO:0000790	PMID:20388878	IDA		C	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20160310	BHF-UCL	coincident_with(SO:0000167),coincident_with(ENSEMBL:ENSG00000207870),coincident_with(ENSEMBL:ENSG00000207725),part_of(GO:0071391)	
+UniProtKB	P03372	ESR1		GO:0000978	PMID:12047722	IDA		F	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20140319	NTNU_SB		
+UniProtKB	P03372	ESR1		GO:0001046	PMID:15345745	IDA		F	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20120109	UniProt	has_participant(UniProtKB:P24387)	
+UniProtKB	P03372	ESR1		GO:0001077	PMID:12047722	IDA		F	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20140226	NTNU_SB		
+UniProtKB	P03372	ESR1		GO:0001093	PMID:9841876	IPI	UniProtKB:P03372	F	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20161128	CAFA		
+UniProtKB	P03372	ESR1		GO:0001547	GO_REF:0000107	IEA	UniProtKB:P19785|ensembl:ENSMUSP00000101215	P	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20170923	Ensembl		
+UniProtKB	P03372	ESR1		GO:0002064	GO_REF:0000107	IEA	UniProtKB:P19785|ensembl:ENSMUSP00000101215	P	Estrogen receptor	ESR1_HUMAN|ESR1|ESR|NR3A1	protein	taxon:9606	20170923	Ensembl		
+UniProtKB	Q9NZS9	BFAR		GO:0070936	PMID:21068390	IDA		P	Bifunctional apoptosis regulator	BFAR_HUMAN|BFAR|BAR|RNF47	protein	taxon:9606	20150202	ParkinsonsUK-UCL	has_direct_input(UniProtKB:Q9NZS9)	
+UniProtKB	Q9NZS9	BFAR		GO:0089720	PMID:10716992	IDA		F	Bifunctional apoptosis regulator	BFAR_HUMAN|BFAR|BAR|RNF47	protein	taxon:9606	20150312	ParkinsonsUK-UCL	has_input(PR:000002317)|has_input(PR:000002310)	
+UniProtKB	Q9NZS9	BFAR		GO:1903895	PMID:21068390	IMP		P	Bifunctional apoptosis regulator	BFAR_HUMAN|BFAR|BAR|RNF47	protein	taxon:9606	20150209	ParkinsonsUK-UCL		
