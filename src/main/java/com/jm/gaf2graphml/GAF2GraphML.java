@@ -133,12 +133,17 @@ public class GAF2GraphML
             File f = new File(filename);
             List<String> lines = FileUtils.readLines(f, "UTF-8");
             int count =0;
-            int total = lines.size();
+            int total =0;
+            for(String line : lines)
+            {
+            	total++;
+            }
+            System.out.println(Integer.toString(total)+ " lines");
             for (String line : lines)
             {
-            	this.processLine(line);
             	count = count + 1;
-            	this.updateProgress(count*1.0/total);
+            	this.updateProgress(count*1.0/(1.0*total), count);
+            	this.processLine(line);
 	        }
         } catch (IOException e)
         {
@@ -201,15 +206,15 @@ public class GAF2GraphML
         		}
         	}
 
-        	// System.out.println("");
-			// System.out.println(protein_name + ", "+description + ", \nis associated with "+aspect+"-thing " + go_entity_for_involvement + "\nin the sense of evidence of type "+evidence_code+", according to "+ reference_id);
-			// if(relations.length>0)
-			// 	System.out.println("Also, "+protein_name);
-			// for(int i=0; i<relations.length; i++)
-			// {
-			// 	System.out.println(relations[i]+ " "+targets[i]);
-			// }
-			// System.out.println();
+        	System.out.println("");
+			System.out.println(protein_name + ", "+description + ", \nis associated with "+aspect+"-thing " + go_entity_for_involvement + "\nin the sense of evidence of type "+evidence_code+", according to "+ reference_id);
+			if(relations.length>0)
+				System.out.println("Also, "+protein_name);
+			for(int i=0; i<relations.length; i++)
+			{
+				System.out.println(relations[i]+ " "+targets[i]);
+			}
+			System.out.println();
 
 
 			if(object_type.equals("protein"))
@@ -383,19 +388,18 @@ public class GAF2GraphML
             id_number = m.group(2);
         }
 
-		String[] l = new String[3];
+    	PrintStream original = System.out;
+    	System.setOut(new PrintStream(new OutputStream() {
+                public void write(int b) {
+                    //DO NOTHING
+                }
+            }));
 
+		String[] l = new String[3];
 		String an = "no annotation";
         Term t;
         try
-        {
-        	PrintStream original = System.out;
-	    	System.setOut(new PrintStream(new OutputStream() {
-	                public void write(int b) {
-	                    //DO NOTHING
-	                }
-	            }));
-	    	
+        {	    	
 	        t = ols_client.getTermByOBOId(database+":"+id_number,database);
 			String def = "";
 			String[] de = t.getDescription();
@@ -414,7 +418,6 @@ public class GAF2GraphML
 
 			// Annotation a = t.getAnnotation();
 			// an = a.getValue();
-			System.setOut(original);
 	    }
 	    catch(Exception e)
 	    {
@@ -422,6 +425,7 @@ public class GAF2GraphML
 	    	l[1] = "lookup failed "+e.getClass().getCanonicalName();
 	    	l[2] = "lookedup-type-string";
 	    }
+		System.setOut(original);
 
         // 		throws RestClientException
 		// String t.getName();
@@ -687,11 +691,12 @@ public class GAF2GraphML
     }
 
 
-	void updateProgress(double progressPercentage)
+	void updateProgress(double progressPercentage, int count)
 	{
 		int width = 90; // progress bar width in chars
 
-		System.out.print("\r[");
+		// System.out.print("\r[");
+		System.out.print("[");
 		int i = 0;
 		for (; i <= (int)(progressPercentage*width); i++)
 		{
@@ -700,7 +705,8 @@ public class GAF2GraphML
 		for (; i < width; i++) {
 		  System.out.print(" ");
 		}
-		System.out.print("] "+Double.toString(progressPercentage));
+		System.out.print("] "+Integer.toString(count));
+		System.out.println("");
 	}
 }
 
